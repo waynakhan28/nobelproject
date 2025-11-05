@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physics Nobel Prize Winners (2020–2025)</title>
+  <link rel="stylesheet" href="eco.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+</head>
+<body>
+<header class="navbar">
+    <div class="logo">
+      <img src="assest/Black and White Modern Personal Brand Logo (1).png" alt="Nobel Insight Logo" />
+      <h1>Nobel Insight</h1>
+    </div>
+     <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="faq.html">FAQs</a></li>
+      <li><a href="news.html">News</a></li>
+      <li class="dropdown">
+        <a href="#" id="sitemapBtn">Site Map ▾</a>
+        <ul class="dropdown-menu" id="sitemapMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  </header>
+  <div class="container">
+  <section class="award-section">
+    <div class="award-text">
+      <h2>2020 - Paul R. Milgrom & Robert B. Wilson</h2>
+      <p><strong>Contribution:</strong> Auction theory</p>
+      <p><strong>History:</strong> Developed new auction formats and theoretical tools, improving allocation of goods and services in markets worldwide.</p>
+    </div>
+    <div class="award-image">
+      <img src="assest/Paul R. Milgrom & Robert B. Wilson.jpg" alt="">
+    </div>
+  </section>
+  <section class="award-section reverse">
+    <div class="award-image">
+      <img src="assest/David Card, Joshua D. Angrist & Guido W. Imbens.jpg" alt="">
+    </div>
+    <div class="award-text">
+      <h2>2021 - David Card, Joshua D. Angrist & Guido W. Imbens</h2>
+      <p><strong>Contribution:</strong> Labor economics & causal relationships</p>
+      <p><strong>History:</strong> David Card analyzed labor markets, while Angrist and Imbens developed methods for causal inference in economics.</p>
+    </div>
+  </section>
+  <section class="award-section">
+    <div class="award-text">
+      <h2>2022 - Ben S. Bernanke, Douglas W. Diamond, Philip H. Dybvig</h2>
+      <p><strong>Contribution:</strong> Research on banks and financial crises</p>
+      <p><strong>History:</strong> Their work explained the role of banks in the economy and mechanisms behind financial crises, shaping economic policy.</p>
+    </div>
+    <div class="award-image">
+      <img src="assest/Ben S. Bernanke, Douglas W. Diamond, Philip H. Dybvig.jpg" alt="">
+    </div>
+  </section>
+  <section class="award-section reverse">
+    <div class="award-image">
+      <img src="assest/Economics 2023 Winner.jpg" alt="">
+    </div>
+    <div class="award-text">
+      <h2>2023 - Economics 2023 Winner</h2>
+      <p><strong>Contribution:</strong> Recent economic research</p>
+      <p><strong>History:</strong> Recognized for outstanding work in economics; official details to be updated after announcement.</p>
+    </div>
+  </section>
+  <section class="award-section">
+    <div class="award-text">
+      <h2>2024 - Economics 2024 Winner</h2>
+      <p><strong>Contribution:</strong> Significant contributions in economic science</p>
+      <p><strong>History:</strong> Celebrated for advancements in understanding economic behavior and policy; details confirmed after official announcement.</p>
+    </div>
+    <div class="award-image">
+      <img src="assest/Economics 2024 Winner.jpg" alt="">
+    </div>
+  </section>
+  <section class="award-section reverse">
+    <div class="award-image">
+      <img src="assest/Economics 2025 Winner.jpg" alt="">
+    </div>
+    <div class="award-text">
+      <h2>2025 - Economics 2025 Winner</h2>
+      <p><strong>Contribution:</strong> Recent advances in economics</p>
+      <p><strong>History:</strong> Recognized for research impacting economic theory and practice; details pending official announcement.</p>
+    </div>
+  </section>
+  <div class="back-btn">
+    <a href="categories.html">Back to Categories</a>
+  </div>
+</div>
+<script>
+  const sitemapBtn = document.getElementById("sitemapBtn");
+  const sitemapMenu = document.getElementById("sitemapMenu");
+  sitemapBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    sitemapMenu.classList.toggle("show");
+  });
+
+  window.addEventListener("click", function (e) {
+    if (!e.target.closest(".dropdown")) {
+      sitemapMenu.classList.remove("show");
+    }
+  });
+</script>
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>Nobel Insight</h3>
+      <p>
+        Exploring brilliance, celebrating minds. Stay inspired with
+        discoveries and stories from the Nobel world.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="about.html"> About Us</a></li>
+        <li><a href="gallery.html"> Gallery</a></li>
+        <li><a href="news.html"> News</a></li>
+        <li><a href="faq.html"> FAQs</a></li>
+        <li><a href="contact.html"> Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact Info</h4>
+      <p><i class="fas fa-map-marker-alt"></i> Metro Star Gate, Karachi, Pakistan</p>
+      <p><i class="fas fa-envelope"></i> info@nobelinsight.com</p>
+      <p><i class="fas fa-phone"></i> +92 123 4567890</p>
+     <div class="social-icons">
+    <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+  </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Nobel Insight</p>
+  </div>
+</footer>
+<script src="https://kit.fontawesome.com/a2e0e6c4a1.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

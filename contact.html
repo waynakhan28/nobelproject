@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="contact.css">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="assest/Black and White Modern Personal Brand Logo (1).png" alt="Nobel Insight Logo" />
+      <h1>Nobel Insight</h1>
+    </div>
+     <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="faq.html">FAQs</a></li>
+      <li><a href="news.html">News</a></li>
+      <li class="dropdown">
+        <a href="#" id="sitemapBtn">Site Map ▾</a>
+        <ul class="dropdown-menu" id="sitemapMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  </header>
+
+  <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-form">
+        <h2>We’d love to hear from you!</h2>
+        <p>Feel free to reach out with your queries, feedback, or suggestions.</p>
+
+        <form>
+        <input type="text" placeholder="Enter your name" pattern="[A-Za-z\s]+" title="Only letters are allowed" required>
+          <input type="email" placeholder="Enter your email" required>
+          <textarea placeholder="Your message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <div class="office-info">
+          <h3>Our Office</h3>
+          <p><strong>Address:</strong> Metro Star Gate, Karachi, Pakistan</p>
+          <p><strong>Email:</strong> abc@gmail.com</p>
+          <p><strong>Phone:</strong> +92 300 1234567</p>
+        </div>
+      </div>
+<div id="thankYouPopup" class="popup">
+  <div class="popup-content">
+    <h2>🎉 Thank You!</h2>
+    <p>Your message has been sent successfully 💌</p>
+  </div>
+</div>
+
+<script>
+  const form = document.querySelector("form");
+  const popup = document.getElementById("thankYouPopup");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    popup.classList.add("show");
+    setTimeout(() => {
+      popup.classList.remove("show");
+      form.reset();
+    }, 2500);
+  });
+</script>
+      <div class="contact-map">
+        <iframe
+          src="https://www.google.com/maps?q=Metro%20Star%20Gate%20Karachi%20Pakistan&output=embed"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+  <script>
+  const sitemapBtn = document.getElementById("sitemapBtn");
+  const sitemapMenu = document.getElementById("sitemapMenu");
+  sitemapBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    sitemapMenu.classList.toggle("show");
+  });
+
+  window.addEventListener("click", function (e) {
+    if (!e.target.closest(".dropdown")) {
+      sitemapMenu.classList.remove("show");
+    }
+  });
+</script>
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>Nobel Insight</h3>
+      <p>
+        Exploring brilliance, celebrating minds. Stay inspired with
+        discoveries and stories from the Nobel world.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="about.html"> About Us</a></li>
+        <li><a href="gallery.html"> Gallery</a></li>
+        <li><a href="news.html"> News</a></li>
+        <li><a href="faq.html"> FAQs</a></li>
+        <li><a href="contact.html"> Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact Info</h4>
+      <p><i class="fas fa-map-marker-alt"></i> Metro Star Gate, Karachi, Pakistan</p>
+      <p><i class="fas fa-envelope"></i> info@nobelinsight.com</p>
+      <p><i class="fas fa-phone"></i> +92 123 4567890</p>
+     <div class="social-icons">
+    <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+  </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Nobel Insight</p>
+  </div>
+</footer>
+
+<script src="https://kit.fontawesome.com/a2e0e6c4a1.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="assest/Black and White Modern Personal Brand Logo (1).png" alt="Nobel Insight Logo" />
+      <h1>Nobel Insight</h1>
+    </div>
+     <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="faq.html">FAQs</a></li>
+      <li><a href="news.html">News</a></li>
+      <li class="dropdown">
+        <a href="#" id="sitemapBtn">Site Map ▾</a>
+        <ul class="dropdown-menu" id="sitemapMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  </header>
+  <div class="faq-container">
+    <h1>Nobel Prize FAQ</h1>
+    <div class="faq">
+      <div class="faq-item">
+        <div class="faq-question">1. What is the Nobel Prize?</div>
+        <div class="faq-answer">
+          <p>The Nobel Prize is an international award given to individuals or organizations who have made outstanding contributions in Physics, Chemistry, Medicine, Literature, Peace, and Economic Sciences.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">2. What is the history of the Nobel Prize?</div>
+        <div class="faq-answer">
+          <p>The Nobel Prize was established in 1895 by Alfred Nobel, a Swedish inventor, engineer, and industrialist, famous for inventing dynamite.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">3. Who can be nominated for the Nobel Prize?</div>
+        <div class="faq-answer">
+          <p>Eligibility criteria vary by category. Generally, individuals or organizations who have made extraordinary contributions can be nominated.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">4. How are Nobel Prize winners selected?</div>
+        <div class="faq-answer">
+          <p>Winners are selected by committees of experts and past laureates. The final decision is made by the Nobel Committee.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">5. How much is the Nobel Prize worth?</div>
+        <div class="faq-answer">
+          <p>The cash award varies each year. In 2024, the prize amount was approximately 11 million Swedish kronor per category.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">6. When are the Nobel Prizes announced?</div>
+        <div class="faq-answer">
+          <p>The winners are announced in the first week of October every year. The award ceremony is held on December 10 in Stockholm or Oslo (Peace Prize in Oslo).</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">7. Why is the Nobel Prize significant?</div>
+        <div class="faq-answer">
+          <p>The Nobel Prize is considered one of the highest recognitions worldwide. It honors scientific, literary, and humanitarian achievements and raises global awareness.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      item.querySelector('.faq-question').addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+<script>
+  const sitemapBtn = document.getElementById("sitemapBtn");
+  const sitemapMenu = document.getElementById("sitemapMenu");
+  sitemapBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    sitemapMenu.classList.toggle("show");
+  });
+
+  window.addEventListener("click", function (e) {
+    if (!e.target.closest(".dropdown")) {
+      sitemapMenu.classList.remove("show");
+    }
+  });
+</script>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>Nobel Insight</h3>
+      <p>
+        Exploring brilliance, celebrating minds. Stay inspired with
+        discoveries and stories from the Nobel world.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="about.html"> About Us</a></li>
+        <li><a href="gallery.html"> Gallery</a></li>
+        <li><a href="news.html"> News</a></li>
+        <li><a href="faq.html"> FAQs</a></li>
+        <li><a href="contact.html"> Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact Info</h4>
+      <p><i class="fas fa-map-marker-alt"></i> Metro Star Gate, Karachi, Pakistan</p>
+      <p><i class="fas fa-envelope"></i> info@nobelinsight.com</p>
+      <p><i class="fas fa-phone"></i> +92 123 4567890</p>
+     <div class="social-icons">
+    <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+  </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Nobel Insight</p>
+  </div>
+</footer>
+
+<script src="https://kit.fontawesome.com/a2e0e6c4a1.js" crossorigin="anonymous"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+</body>
+</html>

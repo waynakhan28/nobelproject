@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physics Nobel Prize Winners (2020–2025)</title>
+  <link rel="stylesheet" href="che.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+</head>
+<body>
+<header class="navbar">
+    <div class="logo">
+      <img src="assest/Black and White Modern Personal Brand Logo (1).png" alt="Nobel Insight Logo" />
+      <h1>Nobel Insight</h1>
+    </div>
+     <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="faq.html">FAQs</a></li>
+      <li><a href="news.html">News</a></li>
+      <li class="dropdown">
+        <a href="#" id="sitemapBtn">Site Map ▾</a>
+        <ul class="dropdown-menu" id="sitemapMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  </header>
+  <div class="container">
+  <section class="award-section">
+    <div class="award-text">
+      <h2>2020 - Emmanuelle Charpentier & Jennifer Doudna</h2>
+      <p><strong>Contribution:</strong> CRISPR-Cas9 gene editing</p>
+      <p><strong>History:</strong> Developed CRISPR-Cas9 method for precise genome editing in living organisms, revolutionizing genetic research.</p>
+    </div>
+    <div class="award-image">
+      <img src="assest/Emmanuelle Charpentier & Jennifer Doudna.webp" alt="">
+    </div>
+  </section>
+
+  <section class="award-section reverse">
+    <div class="award-image">
+      <img src="assest/Benjamin List & David W.C. MacMillan.webp" alt="">
+    </div>
+    <div class="award-text">
+      <h2>2021 - Benjamin List & David W.C. MacMillan</h2>
+      <p><strong>Contribution:</strong> Development of asymmetric organocatalysis</p>
+      <p><strong>History:</strong> Introduced methods for asymmetric catalysis using small organic molecules, enabling precise synthesis of chemical compounds.</p>
+    </div>
+  </section>
+  <section class="award-section">
+    <div class="award-text">
+      <h2>2022 - Carolyn R. Bertozzi, Morten Meldal, K. Barry Sharpless</h2>
+      <p><strong>Contribution:</strong> Click chemistry and bioorthogonal chemistry</p>
+      <p><strong>History:</strong> Developed efficient chemical reactions (“click chemistry”) and methods for studying biomolecules in living systems.</p>
+    </div>
+    <div class="award-image">
+      <img src="assest/Carolyn R. Bertozzi, Morten Meldal, K. Barry Sharpless.jpg" alt="">
+    </div>
+  </section>
+  <section class="award-section reverse">
+    <div class="award-image">
+      <img src="assest/Moungi Bawendi, Louis Brus, Alexey Ekimov.jpg" alt="">
+    </div>
+    <div class="award-text">
+      <h2>2023 - Moungi Bawendi, Louis Brus, Alexey Ekimov</h2>
+      <p><strong>Contribution:</strong> Development of quantum dots</p>
+      <p><strong>History:</strong> Pioneered synthesis and applications of quantum dots for electronic and optical devices, enabling nanotechnology innovations.</p>
+    </div>
+  </section>
+  <section class="award-section">
+    <div class="award-text">
+      <h2>2024 - Carolyn Bertozzi & Others</h2>
+      <p><strong>Contribution:</strong> Advanced bioorthogonal chemical reactions</p>
+      <p><strong>History:</strong> Further developments in bioorthogonal chemistry, facilitating imaging and treatment of diseases at the molecular level.</p>
+    </div>
+    <div class="award-image">
+      <img src="assest/Carolyn Bertozzi & Others.jpg" alt="">
+    </div>
+  </section>
+  <section class="award-section reverse">
+    <div class="award-image">
+      <img src="assest/Chemistry Winners.jpg" alt="">
+    </div>
+    <div class="award-text">
+      <h2>2025 - Chemistry Winners</h2>
+      <p><strong>Contribution:</strong> Recent chemical discoveries</p>
+      <p><strong>History:</strong> Demonstrated significant advances in chemistry; details to be updated after official announcement.</p>
+    </div>
+  </section>
+
+ 
+  <div class="back-btn">
+    <a href="categories.html">Back to Categories</a>
+  </div>
+
+</div>
+ <script>
+  const sitemapBtn = document.getElementById("sitemapBtn");
+  const sitemapMenu = document.getElementById("sitemapMenu");
+  sitemapBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    sitemapMenu.classList.toggle("show");
+  });
+
+  window.addEventListener("click", function (e) {
+    if (!e.target.closest(".dropdown")) {
+      sitemapMenu.classList.remove("show");
+    }
+  });
+</script>
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>Nobel Insight</h3>
+      <p>
+        Exploring brilliance, celebrating minds. Stay inspired with
+        discoveries and stories from the Nobel world.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="about.html"> About Us</a></li>
+        <li><a href="gallery.html"> Gallery</a></li>
+        <li><a href="news.html"> News</a></li>
+        <li><a href="faq.html"> FAQs</a></li>
+        <li><a href="contact.html"> Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact Info</h4>
+      <p><i class="fas fa-map-marker-alt"></i> Metro Star Gate, Karachi, Pakistan</p>
+      <p><i class="fas fa-envelope"></i> info@nobelinsight.com</p>
+      <p><i class="fas fa-phone"></i> +92 123 4567890</p>
+     <div class="social-icons">
+    <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+  </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Nobel Insight</p>
+  </div>
+</footer>
+
+<script src="https://kit.fontawesome.com/a2e0e6c4a1.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

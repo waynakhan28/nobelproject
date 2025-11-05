@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Categories - Nobel Insight</title>
+  <link rel="stylesheet" href="about.css" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="assest/Black and White Modern Personal Brand Logo (1).png" alt="Nobel Insight Logo" />
+      <h1>Nobel Insight</h1>
+    </div>
+      <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="faq.html">FAQs</a></li>
+      <li><a href="news.html">News</a></li>
+      <li class="dropdown">
+        <a href="#" id="sitemapBtn">Site Map ▾</a>
+        <ul class="dropdown-menu" id="sitemapMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  </header>
+<section class="about-intro">
+  <div class="container">
+    <div class="text">
+      <h2>About the Nobel Prize</h2>
+      <p>
+        The Nobel Prize honors extraordinary achievements that have advanced humanity through science,
+        literature, and peace. Created by Alfred Nobel’s will in 1895, the Prize has become one of the world’s
+        most respected symbols of human excellence and compassion.
+      </p>
+      <p>
+        Our website shares the stories behind these great minds — how their dedication, innovation,
+        and courage continue to shape our world. Here, you’ll explore their journeys, their causes,
+        and the legacy they left for generations to come.
+      </p>
+    </div>
+    <div class="image">
+      <img src="assest/0000015e-ce32-dba1-a7fe-cefa82fe0002.avif" alt="Alfred Nobel History">
+    </div>
+  </div>
+</section>
+<section class="about-vision">
+  <div class="container reverse">
+    <div class="image">
+      <img src="assest/nobel-prize-medals-standing-on-260nw-2370558879.webp" alt="Nobel Vision">
+    </div>
+    <div class="text">
+      <h2>Our Vision</h2>
+      <p>
+        The vision behind this platform is to make knowledge about Nobel laureates easily accessible,
+        inspiring students, researchers, and dreamers worldwide. Every discovery, invention, and act
+        of peace deserves to be remembered.
+      </p>
+      <ul>
+        <li><strong>Inspire:</strong> Encourage learning from great minds.</li>
+        <li><strong>Preserve:</strong> Document the legacy of Nobel laureates.</li>
+        <li><strong>Connect:</strong> Build a bridge between past and present innovations.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="about-video-section">
+  <div class="about-video-content">
+    <div class="text-section">
+      <h2>Behind the Nobel Prize</h2>
+      <p>
+        Discover how the Nobel Prize began — a legacy born from Alfred Nobel’s
+        vision to reward humanity’s greatest contributions to science, peace,
+        and literature. Watch this short video to explore the inspiring story
+        behind one of the world’s most prestigious honors.
+      </p>
+    </div>
+
+    <div class="video-section">
+      <iframe
+        src="https://www.youtube.com/embed/c0ou3X9SfB8"
+        title="Nobel Prize Story"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
+ <script>
+  const sitemapBtn = document.getElementById("sitemapBtn");
+  const sitemapMenu = document.getElementById("sitemapMenu");
+  sitemapBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    sitemapMenu.classList.toggle("show");
+  });
+
+  window.addEventListener("click", function (e) {
+    if (!e.target.closest(".dropdown")) {
+      sitemapMenu.classList.remove("show");
+    }
+  });
+</script>
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>Nobel Insight</h3>
+      <p>
+        Exploring brilliance, celebrating minds. Stay inspired with
+        discoveries and stories from the Nobel world.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="about.html"> About Us</a></li>
+        <li><a href="gallery.html"> Gallery</a></li>
+        <li><a href="news.html"> News</a></li>
+        <li><a href="faq.html"> FAQs</a></li>
+        <li><a href="contact.html"> Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact Info</h4>
+      <p><i class="fas fa-map-marker-alt"></i> Metro Star Gate, Karachi, Pakistan</p>
+      <p><i class="fas fa-envelope"></i> info@nobelinsight.com</p>
+      <p><i class="fas fa-phone"></i> +92 123 4567890</p>
+     <div class="social-icons">
+    <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+  </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Nobel Insight</p>
+  </div>
+</footer>
+
+<script src="https://kit.fontawesome.com/a2e0e6c4a1.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

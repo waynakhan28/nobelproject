@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nobel Insight</title>
+  <link rel="stylesheet" href="style.css" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+</head>
+<body>
+  <header class="navbar">
+  <div class="logo">
+    <img src="assest/Black and White Modern Personal Brand Logo (1).png" alt="Nobel Insight Logo" />
+    <h1>Nobel Insight</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="faq.html">FAQs</a></li>
+      <li><a href="news.html">News</a></li>
+
+      <!-- Site Map Dropdown -->
+      <li class="dropdown">
+        <a href="#" id="sitemapBtn">Site Map ▾</a>
+        <ul class="dropdown-menu" id="sitemapMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </li>
+
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+  <section class="banner">
+    <div class="banner-content">
+      <h2>The Nobel Prize – Honoring Excellence Across the World</h2>
+      <p>
+        Every year, the Nobel Prize celebrates those rare individuals whose work has shaped our world—through discoveries, courage, and creativity.
+        Here at Nobel Insight, we explore their journeys and the timeless impact of their contributions.
+      </p>
+      <a href="categories.html" class="explore-btn">Let's Explore</a>
+    </div>
+  </section>
+  <section class="nobel-history">
+  <div class="history-container">
+    <div class="history-text">
+      <h2>How It Started?</h2>
+      <p>
+        The Nobel Prize began in 1901, founded by Alfred Nobel — the inventor of dynamite. 
+        His vision was to honor those who brought the greatest benefit to humankind through 
+        science, literature, and peace. Over time, it became one of the world’s most respected awards.
+      </p>
+    </div>
+    <div class="history-image">
+      <img src="assest/7boi0cb_nobel-prize-2023_625x300_02_October_23.avif" alt="Nobel Prize History">
+    </div>
+  </div>
+</section>
+<section class="nobel-categories">
+  <div class="categories-container">
+    <div class="categories-image">
+      <img src="assest/INTERACTIVE-Nobel-Prize-Categories.webp" alt="Nobel Prize Categories">
+    </div>
+    <div class="categories-text">
+      <h2>Nobel Prize Award Categories</h2>
+      <p>
+        The Nobel Prizes are presented in six distinguished fields — Physics, Chemistry, Physiology or Medicine,
+        Literature, Peace, and Economic Sciences. Each category represents Alfred Nobel’s vision to celebrate
+        the most outstanding contributions that benefit humanity and inspire future generations.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="nobel-timeline">
+  <h2 class="timeline-title">Nobel Prize Awards & Achievements Timeline</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>1901</h3>
+        <p>The first Nobel Prizes were awarded in Physics, Chemistry, Medicine, Literature, and Peace.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>1969</h3>
+        <p>The Nobel Prize in Economic Sciences was established, expanding Alfred Nobel’s vision.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>2001</h3>
+        <p>The 100th anniversary of the Nobel Prizes was celebrated worldwide with special exhibitions.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>2020</h3>
+        <p>Scientific breakthroughs in genetics and climate change received Nobel recognition.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  const sitemapBtn = document.getElementById("sitemapBtn");
+  const sitemapMenu = document.getElementById("sitemapMenu");
+
+  // Dropdown toggle on click
+  sitemapBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    sitemapMenu.classList.toggle("show");
+  });
+
+  // Close dropdown if clicked outside
+  window.addEventListener("click", function (e) {
+    if (!e.target.closest(".dropdown")) {
+      sitemapMenu.classList.remove("show");
+    }
+  });
+</script>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>Nobel Insight</h3>
+      <p>
+        Exploring brilliance, celebrating minds. Stay inspired with
+        discoveries and stories from the Nobel world.
+      </p>
+    </div>
+    
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="about.html"> About Us</a></li>
+        <li><a href="gallery.html"> Gallery</a></li>
+        <li><a href="news.html"> News</a></li>
+        <li><a href="faq.html"> FAQs</a></li>
+        <li><a href="contact.html"> Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact Info</h4>
+      <p><i class="fas fa-map-marker-alt"></i> Metro Star Gate, Karachi, Pakistan</p>
+      <p><i class="fas fa-envelope"></i> info@nobelinsight.com</p>
+      <p><i class="fas fa-phone"></i> +92 123 4567890</p>
+     <div class="social-icons">
+    <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+  </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Nobel Insight</p>
+  </div>
+</footer>
+
+<!-- Font Awesome for icons -->
+<script src="https://kit.fontawesome.com/a2e0e6c4a1.js" crossorigin="anonymous"></script>
+</body>
+</html>

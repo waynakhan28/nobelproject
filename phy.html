@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physics Nobel Prize Winners (2020–2025)</title>
+  <link rel="stylesheet" href="phy.css">
+ 
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+</head>
+<body>
+ <header class="navbar">
+  <div class="logo">
+    <img src="assest/Black and White Modern Personal Brand Logo (1).png" alt="Nobel Insight Logo" />
+    <h1>Nobel Insight</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="faq.html">FAQs</a></li>
+      <li><a href="news.html">News</a></li>
+      <li class="dropdown">
+        <a href="#" id="sitemapBtn">Site Map ▾</a>
+        <ul class="dropdown-menu" id="sitemapMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="container">
+
+  <section class="award-section">
+    <div class="award-text">
+      <h2>2020 - Roger Penrose</h2>
+      <p><strong>Contribution:</strong> Black hole formation and general relativity</p>
+      <p><strong>History:</strong> Demonstrated black hole formation as a robust prediction of general relativity. Theoretical physics exploration of black holes.</p>
+    </div>
+    <div class="award-image">
+      <img src="assest/Roger Penrose.jpg" alt="">
+    </div>
+  </section>
+
+  <section class="award-section reverse">
+    <div class="award-image">
+      <img src="assest/Reinhard Genzel & Andrea Ghez.jpg" alt="">
+    </div>
+    <div class="award-text">
+      <h2>2020 - Reinhard Genzel & Andrea Ghez</h2>
+      <p><strong>Contribution:</strong> Discovery of supermassive black hole at Milky Way center</p>
+      <p><strong>History:</strong> Observational proof of supermassive compact object at our galaxy's center.</p>
+    </div>
+  </section>
+  <section class="award-section">
+    <div class="award-text">
+      <h2>2021 - Syukuro Manabe & Klaus Hasselmann</h2>
+      <p><strong>Contribution:</strong> Climate modeling & global warming prediction</p>
+      <p><strong>History:</strong> Developed climate models quantifying variability; advanced climate science as a scientific discipline.</p>
+    </div>
+    <div class="award-image">
+      <img src="assest/Syukuro Manabe & Klaus Hasselmann.jpg" alt="">
+    </div>
+  </section>
+
+  <section class="award-section reverse">
+    <div class="award-image">
+      <img src="assest/Giorgio Parisi.jpg" alt="">
+    </div>
+    <div class="award-text">
+      <h2>2021 - Giorgio Parisi</h2>
+      <p><strong>Contribution:</strong> Disorder and fluctuations in physical systems</p>
+      <p><strong>History:</strong> Discovery of interplay of disorder and fluctuations from atomic to planetary scales in physical systems.</p>
+    </div>
+  </section>
+
+  <section class="award-section">
+    <div class="award-text">
+      <h2>2022 - Alain Aspect, John F. Clauser, Anton Zeilinger</h2>
+      <p><strong>Contribution:</strong> Entangled photons experiments</p>
+      <p><strong>History:</strong> Demonstrated violation of Bell inequalities, pioneering quantum information science.</p>
+    </div>
+    <div class="award-image">
+      <img src="assest/Alain Aspect, John F. Clauser, Anton Zeilinger.jpg" alt="">
+    </div>
+  </section>
+  
+  <section class="award-section reverse">
+    <div class="award-image">
+      <img src="assest/Pierre Agostini, Ferenc Krausz, Anne L’Huillier.jpg" alt="">
+    </div>
+    <div class="award-text">
+      <h2>2023 - Pierre Agostini, Ferenc Krausz, Anne L’Huillier</h2>
+      <p><strong>Contribution:</strong> Attosecond pulse generation</p>
+      <p><strong>History:</strong> Developed methods generating attosecond pulses of light to study electron dynamics in matter.</p>
+    </div>
+  </section>
+  <section class="award-section">
+    <div class="award-text">
+      <h2>2024 - John J. Hopfield & Geoffrey Hinton</h2>
+      <p><strong>Contribution:</strong> Artificial neural networks & machine learning</p>
+      <p><strong>History:</strong> Foundational discoveries in neural networks; Hopfield networks and backpropagation for deep learning.</p>
+    </div>
+    <div class="award-image">
+      <img src="assest/John J. Hopfield & Geoffrey Hinton.jpg" alt="">
+    </div>
+  </section>
+
+  <section class="award-section reverse">
+    <div class="award-image">
+      <img src="assest/John Clarke, Michel H. Devoret, John M. Martinis.jpg" alt="">
+    </div>
+    <div class="award-text">
+      <h2>2025 - John Clarke, Michel H. Devoret, John M. Martinis</h2>
+      <p><strong>Contribution:</strong> Superconducting circuits demonstrating quantum phenomena</p>
+      <p><strong>History:</strong> Demonstrated quantum mechanical properties at macroscopic scale, foundation for quantum computing and quantum technologies.</p>
+    </div>
+  </section>
+</div>
+<div class="back-btn">
+  <a href="categories.html">Back to Categories</a>
+</div>
+ <script>
+  const sitemapBtn = document.getElementById("sitemapBtn");
+  const sitemapMenu = document.getElementById("sitemapMenu");
+
+  // Dropdown toggle on click
+  sitemapBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    sitemapMenu.classList.toggle("show");
+  });
+
+  // Close dropdown if clicked outside
+  window.addEventListener("click", function (e) {
+    if (!e.target.closest(".dropdown")) {
+      sitemapMenu.classList.remove("show");
+    }
+  });
+</script>
+
+  
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>Nobel Insight</h3>
+      <p>
+        Exploring brilliance, celebrating minds. Stay inspired with
+        discoveries and stories from the Nobel world.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="about.html"> About Us</a></li>
+        <li><a href="gallery.html"> Gallery</a></li>
+        <li><a href="news.html"> News</a></li>
+        <li><a href="faq.html"> FAQs</a></li>
+        <li><a href="contact.html"> Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact Info</h4>
+      <p><i class="fas fa-map-marker-alt"></i> Metro Star Gate, Karachi, Pakistan</p>
+      <p><i class="fas fa-envelope"></i> info@nobelinsight.com</p>
+      <p><i class="fas fa-phone"></i> +92 123 4567890</p>
+     <div class="social-icons">
+    <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+  </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Nobel Insight</p>
+  </div>
+</footer>
+<script src="https://kit.fontawesome.com/a2e0e6c4a1.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
